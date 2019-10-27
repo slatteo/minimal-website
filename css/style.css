@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/** RESET CSS **/
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+h1{
+    font-family: acumin-pro, sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+}
+h2{
+    font-family: acumin-pro, sans-serif;
+    font-size: 1.1em;
+    font-weight: thin;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+}
+
+.about:hover .abouttip {
+    display: block;
+}
+
+
+.abouttip {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 0;
+    width: 700px;
+    height: 300px;
+    -webkit-box-shadow: 0px 0px 55px 6px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 55px 6px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 55px 6px rgba(0,0,0,0.25);  
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.portfolio:hover .portfoliotip{
+    display: block;
+}
+
+.contacttip {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 0;
+    width: 700px;
+    height: 400px;
+    -webkit-box-shadow: 0px 0px 55px 6px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 55px 6px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 55px 6px rgba(0,0,0,0.25);  
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+
+.about{
+    font-family: acumin-pro, sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+#portfolio{
+    font-family: acumin-pro, sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+
+#contact{
+    font-family: acumin-pro, sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.about:hover{
+    cursor: pointer;
+}
+
+.contact:hover{
+    cursor: pointer;
+}
+
+.portfolio:hover{
+    cursor: pointer;
+}
+
+hr{
+    position: absolute;
+    left: 15%;
+    top: 65%;
+    background-color: black;
+    width: 84px;
+    height: 12px;
+}
+
+img{
+    width: 481px;
+    height: 481px;
+    position: absolute;
+    top: 22%;
+    right: 15%;
+    -webkit-box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.25);
+    transition: transform 0.5s;
+    z-index: -1;
+}
+
+img:hover { transform: scale(0.80); }
+
+#about3:hover + #arrow1 {
+    display: block;
+}
+
+
+#arrow1{
+    position: absolute;
+    right: 87%;
+    top: 23%;
+    display: none;
+}
+
+#arrow2{
+    position: absolute;
+    right: 87%;
+    top: 38%;
+    display: none;
+}
+
+#arrow3{
+    position: absolute;
+    right: 87%;
+    top: 53%;
+    display: none;
+}
+
+.fa-telegram-plane{
+    position: absolute;
+    bottom: 5%;
+    right: 43%;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+.fa-linkedin-in{
+    position: absolute;
+    bottom: 5%;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+.fa-github{
+    position: absolute;
+    bottom: 5%;
+    left: 43%;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+i:hover{
+    cursor: pointer;
+    transform: scale(0.80);
+
+}
